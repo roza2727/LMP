@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMP: Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Learning Management Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="students.html">Students</a>
+            <a href="courses.html">Courses</a>
+        </nav>
+    </header>
+    <!-- end header -->
+     <main>
+        <h2>Student Registration Form</h2>
+        <form action="" method = "get">
+            <p>
+                <label for="studentName">Student Name :</label>
+                <input type="text" id ="studentName" name="Student Name" required>
+            </p>
+             <p>
+                <label for="mobile">Mobile No :</label>
+                <input type="tel" id ="mobile" name="mobile" required>
+            </p>
+              <p>
+                <label for="email">E-mail :</label>
+                <input type="email" id ="email" name="email" required>
+            </p>
+              <p>
+                <label for="address">Address :</label>
+               <textarea name="address" id="address" rows="3"></textarea>
+            </p>
+            <select name="course" id="course" required>
+                <option value="">Choose your course</option>
+                <option value="web">Web Design & Development</option>
+                 <option value="graphics">Graphic Design</option>
+                  <option value="digital">Digital Marketing </option>
+            </select>
+<button type="submit">Submit</button>
+<button type="reset">Clear</button>
+        </form>
+     </main>
+     <!-- end main -->
+      <footer> 
+         <p>&copy; 2026 Learning Management Portal</p>
+      </footer>
+     <script src="app.js"></script>
+</body>
+</html>
