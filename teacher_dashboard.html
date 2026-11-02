@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teacher Dashboard</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f3f5f9; color: #222; }
+    header { background: #1f3a5f; color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; }
+    header a { color: white; margin-left: 15px; text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+    .stats { display: flex; gap: 15px; flex-wrap: wrap; }
+    .box { background: white; border-radius: 6px; padding: 15px; box-shadow: 0 1px 4px #0002; }
+    .stats .box { flex: 1; min-width: 150px; text-align: center; }
+    .stats strong { display: block; font-size: 28px; color: #1f3a5f; }
+    h2 { margin-top: 30px; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+    th { background: #e8edf5; }
+    .btn { display: inline-block; background: #1f3a5f; color: white; padding: 8px 14px; border-radius: 4px; text-decoration: none; margin-right: 8px; }
+    .btn:hover { background: #2f5488; }
+    footer { text-align: center; color: #777; padding: 20px; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Teacher Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="students.html">Students</a>
+      <a href="activities.html">Activities</a>
+      <a href="student-login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome, Teacher!</h2>
+
+    <!-- Summary numbers: change them to your own -->
+    <div class="stats">
+      <div class="box"><strong>4</strong>Courses</div>
+      <div class="box"><strong>120</strong>Students</div>
+      <div class="box"><strong>6</strong>Assignments to grade</div>
+    </div>
+
+    <h2>Quick actions</h2>
+    <div class="box">
+      <a class="btn" href="courses.html">Add course</a>
+      <a class="btn" href="activities.html">Create assignment</a>
+      <a class="btn" href="students.html">View students</a>
+    </div>
+
+    <h2>My courses</h2>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Students</th>
+        <th>Next class</th>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>35</td>
+        <td>Monday, 10:00 AM</td>
+      </tr>
+      <tr>
+        <td>Database Systems</td>
+        <td>30</td>
+        <td>Tuesday, 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Programming Basics</td>
+        <td>40</td>
+        <td>Wednesday, 9:00 AM</td>
+      </tr>
+      <tr>
+        <td>Networking</td>
+        <td>15</td>
+        <td>Thursday, 11:00 AM</td>
+      </tr>
+    </table>
+
+    <h2>Recent submissions</h2>
+    <table>
+      <tr>
+        <th>Student</th>
+        <th>Assignment</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Rahim Uddin</td>
+        <td>HTML Project</td>
+        <td>Needs grading</td>
+      </tr>
+      <tr>
+        <td>Nusrat Jahan</td>
+        <td>SQL Quiz</td>
+        <td>Graded</td>
+      </tr>
+      <tr>
+        <td>Arif Hossain</td>
+        <td>Loop Exercises</td>
+        <td>Needs grading</td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>&copy; 2026 Learning Management System</footer>
+
+</body>
+</html>
