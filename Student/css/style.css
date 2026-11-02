@@ -1,0 +1,163 @@
+/* common css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    line-height: 1.6;
+}
+header{
+ background-color: rgb(180, 136, 77);
+    color: rgb(233, 237, 241);
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    background-color: rgb(104, 67, 22);
+    padding: 12;
+    text-align: center;
+}
+nav a{
+    color: rgb(246, 246, 211);
+    text-decoration: none;
+    margin: 0;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: rgb(230, 191, 142);
+    padding: 7px;
+    color: black;
+    border-radius: 5px;
+
+
+}
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgb(213, 187, 153);
+    padding: 20px;
+    border: 1px solid rgb(235, 214, 187) ;
+    border-radius: 8px;
+}
+section, article{
+    margin-bottom: 22px;
+}
+h2{
+    color: rgb(51, 43, 32);
+}
+img{
+    width: 50%;
+    height: auto;
+    border-radius: 16px;
+}
+footer{
+    background-color: rgb(120, 87, 47);
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+/* common css end */
+/* table start */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+}
+
+table th,td{
+    padding: 5px;
+    border: 5px solid rgb(60, 28, 28);
+}
+table th{
+    background-color: rgb(70, 48, 21);
+    color: aliceblue;
+}
+/* table end */
+/* formstart */
+input,select, textarea{
+    max-width:100% ;
+    padding: 8px;
+    border:2px solid rgba(91, 30, 30, 0.263);
+    border-radius: 10px;
+    
+}
+
+button{
+    background-color: rgb(99, 74, 43);
+    color: aliceblue;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(155, 128, 87);
+}
+.title-container{
+    background-color:rgb(169, 145, 98) ;
+      text-align: center; 
+    padding: 20px;
+}
+.hero-container{
+     background-color:rgb(169, 145, 98) ;
+   
+    padding: 20px 450px;
+}
+.hero-container{
+    margin: 10px auto;
+}
+/* cousr-containerstart */
+.course-container{
+    display: flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.course-card{
+    width: 30%;
+    min-width: 240px;
+    padding: 16px;
+    border:1px solid rgb(101, 74, 17);
+    background-color: rgb(163, 131, 91);
+    border-radius: 10px;
+
+}
+.course-card h3{
+    color: rgb(245, 229, 211);
+}
+.course-card img{
+    width: 100%;
+    height:160px;
+    object-fit: cover;
+
+}
+.course-card a{
+    display:inline-block;
+    background-color: rgb(137, 112, 80);
+    padding: 4px 14px;
+    color: rgb(246, 235, 221);
+    text-decoration: none;
+    border-radius: 10px;
+}
+.course-card a:hover{
+    background-color: rgb(107, 88, 63);
+}
+@media(max-width:700px){
+    .course-container{
+        flex-direction: colum;
+    }
+    .course-card{
+        width: 100%;
+        min-width: 0;
+    }
+    
+}
+#x:hover {
+background-color: rgb(34, 22, 5);
+}
+/* cousr-containerend */
+/* form end */
